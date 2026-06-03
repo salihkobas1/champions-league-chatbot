@@ -1,0 +1,1697 @@
+[
+    {
+        "page_content": "Roy Makaay scored one of the fastest goals in UEFA Champions League history. He scored after exactly 10.12 seconds in the match 'FC Bayern Munchen 2 Real Madrid CF 1' played on 07/03/2007.",
+        "metadata": {
+            "source_file": "ucl_fastest_goals.csv",
+            "category": "fastest_goals",
+            "player": "Roy Makaay",
+            "time_detail": "10.12 seconds",
+            "match": "FC Bayern Munchen 2 Real Madrid CF 1",
+            "date": "07/03/2007"
+        }
+    },
+    {
+        "page_content": "Jonas scored one of the fastest goals in UEFA Champions League history. He scored after exactly 10.96 seconds in the match 'Valencia CF 3 Bayer 04 Leverkusen 1' played on 01/11/2011.",
+        "metadata": {
+            "source_file": "ucl_fastest_goals.csv",
+            "category": "fastest_goals",
+            "player": "Jonas",
+            "time_detail": "10.96 seconds",
+            "match": "Valencia CF 3 Bayer 04 Leverkusen 1",
+            "date": "01/11/2011"
+        }
+    },
+    {
+        "page_content": "Gilberto Silva scored one of the fastest goals in UEFA Champions League history. He scored after exactly 20.07 seconds in the match 'PSV Eindhoven 0 Arsenal FC 4' played on 25/09/2002.",
+        "metadata": {
+            "source_file": "ucl_fastest_goals.csv",
+            "category": "fastest_goals",
+            "player": "Gilberto Silva",
+            "time_detail": "20.07 seconds",
+            "match": "PSV Eindhoven 0 Arsenal FC 4",
+            "date": "25/09/2002"
+        }
+    },
+    {
+        "page_content": "Alessandro Del Piero scored one of the fastest goals in UEFA Champions League history. He scored after exactly 20.12 seconds in the match 'Manchester United FC 3 Juventus 2' played on 01/10/1997.",
+        "metadata": {
+            "source_file": "ucl_fastest_goals.csv",
+            "category": "fastest_goals",
+            "player": "Alessandro Del Piero",
+            "time_detail": "20.12 seconds",
+            "match": "Manchester United FC 3 Juventus 2",
+            "date": "01/10/1997"
+        }
+    },
+    {
+        "page_content": "Clarence Seedorf scored one of the fastest goals in UEFA Champions League history. He scored after exactly 21.06 seconds in the match 'FC Schalke 04 2 AC Milan 2' played on 28/09/2005.",
+        "metadata": {
+            "source_file": "ucl_fastest_goals.csv",
+            "category": "fastest_goals",
+            "player": "Clarence Seedorf",
+            "time_detail": "21.06 seconds",
+            "match": "FC Schalke 04 2 AC Milan 2",
+            "date": "28/09/2005"
+        }
+    },
+    {
+        "page_content": "Cristiano Ronaldo is one of the all-time top goalscorers in UEFA Champions League history. Representing Portugal, he scored a total of 141 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Cristiano Ronaldo",
+            "goals_count": 141,
+            "nationality": "Portugal"
+        }
+    },
+    {
+        "page_content": "Lionel Messi is one of the all-time top goalscorers in UEFA Champions League history. Representing Argentina, he scored a total of 129 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Lionel Messi",
+            "goals_count": 129,
+            "nationality": "Argentina"
+        }
+    },
+    {
+        "page_content": "Robert Lewandowski is one of the all-time top goalscorers in UEFA Champions League history. Representing Poland, he scored a total of 91 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Robert Lewandowski",
+            "goals_count": 91,
+            "nationality": "Poland"
+        }
+    },
+    {
+        "page_content": "Karim Benzema is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 90 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Karim Benzema",
+            "goals_count": 90,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "Raúl González is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 71 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Raúl González",
+            "goals_count": 71,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Ruud van Nistelrooy is one of the all-time top goalscorers in UEFA Champions League history. Representing Netherlands, he scored a total of 60 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Ruud van Nistelrooy",
+            "goals_count": 60,
+            "nationality": "Netherlands"
+        }
+    },
+    {
+        "page_content": "Andriy Shevchenko is one of the all-time top goalscorers in UEFA Champions League history. Representing Ukraine, he scored a total of 59 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Andriy Shevchenko",
+            "goals_count": 59,
+            "nationality": "Ukraine"
+        }
+    },
+    {
+        "page_content": "Thomas Müller is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 53 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Thomas Müller",
+            "goals_count": 53,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Thierry Henry is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 51 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Thierry Henry",
+            "goals_count": 51,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "Filippo Inzaghi is one of the all-time top goalscorers in UEFA Champions League history. Representing Italy, he scored a total of 50 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Filippo Inzaghi",
+            "goals_count": 50,
+            "nationality": "Italy"
+        }
+    },
+    {
+        "page_content": "Zlatan Ibrahimović is one of the all-time top goalscorers in UEFA Champions League history. Representing Sweden, he scored a total of 49 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Zlatan Ibrahimović",
+            "goals_count": 49,
+            "nationality": "Sweden"
+        }
+    },
+    {
+        "page_content": "Alfredo Di Stéfano is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 49 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Alfredo Di Stéfano",
+            "goals_count": 49,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Mohamed Salah is one of the all-time top goalscorers in UEFA Champions League history. Representing Egypt, he scored a total of 48 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Mohamed Salah",
+            "goals_count": 48,
+            "nationality": "Egypt"
+        }
+    },
+    {
+        "page_content": "Sergio Agüero is one of the all-time top goalscorers in UEFA Champions League history. Representing Argentina, he scored a total of 47 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Sergio Agüero",
+            "goals_count": 47,
+            "nationality": "Argentina"
+        }
+    },
+    {
+        "page_content": "Eusébio is one of the all-time top goalscorers in UEFA Champions League history. Representing Portugal, he scored a total of 47 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Eusébio",
+            "goals_count": 47,
+            "nationality": "Portugal"
+        }
+    },
+    {
+        "page_content": "Didier Drogba is one of the all-time top goalscorers in UEFA Champions League history. Representing Ivory Coast, he scored a total of 44 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Didier Drogba",
+            "goals_count": 44,
+            "nationality": "Ivory Coast"
+        }
+    },
+    {
+        "page_content": "Neymar is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 43 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Neymar",
+            "goals_count": 43,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Alessandro Del Piero is one of the all-time top goalscorers in UEFA Champions League history. Representing Italy, he scored a total of 43 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Alessandro Del Piero",
+            "goals_count": 43,
+            "nationality": "Italy"
+        }
+    },
+    {
+        "page_content": "Kylian Mbappé is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 40 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Kylian Mbappé",
+            "goals_count": 40,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "Fernando Morientes is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 39 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Fernando Morientes",
+            "goals_count": 39,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Ferenc Puskás is one of the all-time top goalscorers in UEFA Champions League history. Representing Hungary, he scored a total of 36 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Ferenc Puskás",
+            "goals_count": 36,
+            "nationality": "Hungary"
+        }
+    },
+    {
+        "page_content": "Edinson Cavani is one of the all-time top goalscorers in UEFA Champions League history. Representing Uruguay, he scored a total of 35 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Edinson Cavani",
+            "goals_count": 35,
+            "nationality": "Uruguay"
+        }
+    },
+    {
+        "page_content": "Erling Haaland is one of the all-time top goalscorers in UEFA Champions League history. Representing Norway, he scored a total of 34 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Erling Haaland",
+            "goals_count": 34,
+            "nationality": "Norway"
+        }
+    },
+    {
+        "page_content": "Gerd Müller is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 34 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Gerd Müller",
+            "goals_count": 34,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Wayne Rooney is one of the all-time top goalscorers in UEFA Champions League history. Representing England, he scored a total of 34 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Wayne Rooney",
+            "goals_count": 34,
+            "nationality": "England"
+        }
+    },
+    {
+        "page_content": "Samuel Eto’o is one of the all-time top goalscorers in UEFA Champions League history. Representing Cameroon, he scored a total of 33 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Samuel Eto’o",
+            "goals_count": 33,
+            "nationality": "Cameroon"
+        }
+    },
+    {
+        "page_content": "David Trezeguet is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 32 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "David Trezeguet",
+            "goals_count": 32,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "Arjen Robben is one of the all-time top goalscorers in UEFA Champions League history. Representing Netherlands, he scored a total of 32 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Arjen Robben",
+            "goals_count": 32,
+            "nationality": "Netherlands"
+        }
+    },
+    {
+        "page_content": "Luis Suárez is one of the all-time top goalscorers in UEFA Champions League history. Representing Uruguay, he scored a total of 31 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Luis Suárez",
+            "goals_count": 31,
+            "nationality": "Uruguay"
+        }
+    },
+    {
+        "page_content": "Serhiy Rebrov is one of the all-time top goalscorers in UEFA Champions League history. Representing Ukraine, he scored a total of 31 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Serhiy Rebrov",
+            "goals_count": 31,
+            "nationality": "Ukraine"
+        }
+    },
+    {
+        "page_content": "Antoine Griezmann is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 31 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Antoine Griezmann",
+            "goals_count": 31,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "Rivaldo is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 31 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Rivaldo",
+            "goals_count": 31,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Kaká is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 30 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Kaká",
+            "goals_count": 30,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Steven Gerrard is one of the all-time top goalscorers in UEFA Champions League history. Representing England, he scored a total of 30 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Steven Gerrard",
+            "goals_count": 30,
+            "nationality": "England"
+        }
+    },
+    {
+        "page_content": "Ryan Giggs is one of the all-time top goalscorers in UEFA Champions League history. Representing Wales, he scored a total of 30 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Ryan Giggs",
+            "goals_count": 30,
+            "nationality": "Wales"
+        }
+    },
+    {
+        "page_content": "Francisco Gento is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 30 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Francisco Gento",
+            "goals_count": 30,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Patrick Kluivert is one of the all-time top goalscorers in UEFA Champions League history. Representing Netherlands, he scored a total of 30 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Patrick Kluivert",
+            "goals_count": 30,
+            "nationality": "Netherlands"
+        }
+    },
+    {
+        "page_content": "Roy Makaay is one of the all-time top goalscorers in UEFA Champions League history. Representing Netherlands, he scored a total of 29 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Roy Makaay",
+            "goals_count": 29,
+            "nationality": "Netherlands"
+        }
+    },
+    {
+        "page_content": "Jardel is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 29 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Jardel",
+            "goals_count": 29,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Edin Džeko is one of the all-time top goalscorers in UEFA Champions League history. Representing Bosnia &, he scored a total of 29 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Edin Džeko",
+            "goals_count": 29,
+            "nationality": "Bosnia &"
+        }
+    },
+    {
+        "page_content": "Hernán Crespo is one of the all-time top goalscorers in UEFA Champions League history. Representing Argentina, he scored a total of 28 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Hernán Crespo",
+            "goals_count": 28,
+            "nationality": "Argentina"
+        }
+    },
+    {
+        "page_content": "Mario Mandžukić is one of the all-time top goalscorers in UEFA Champions League history. Representing Croatia, he scored a total of 28 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Mario Mandžukić",
+            "goals_count": 28,
+            "nationality": "Croatia"
+        }
+    },
+    {
+        "page_content": "Jean-Pierre Papin is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 28 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Jean-Pierre Papin",
+            "goals_count": 28,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "Raheem Sterling is one of the all-time top goalscorers in UEFA Champions League history. Representing England, he scored a total of 27 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Raheem Sterling",
+            "goals_count": 27,
+            "nationality": "England"
+        }
+    },
+    {
+        "page_content": "Mario Gomez is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 27 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Mario Gomez",
+            "goals_count": 27,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Giovane Elber is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 27 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Giovane Elber",
+            "goals_count": 27,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Robin van Persie is one of the all-time top goalscorers in UEFA Champions League history. Representing Netherlands, he scored a total of 27 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Robin van Persie",
+            "goals_count": 27,
+            "nationality": "Netherlands"
+        }
+    },
+    {
+        "page_content": "Sadio Mané is one of the all-time top goalscorers in UEFA Champions League history. Representing Senegal, he scored a total of 27 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Sadio Mané",
+            "goals_count": 27,
+            "nationality": "Senegal"
+        }
+    },
+    {
+        "page_content": "Marco Simone is one of the all-time top goalscorers in UEFA Champions League history. Representing Italy, he scored a total of 25 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Marco Simone",
+            "goals_count": 25,
+            "nationality": "Italy"
+        }
+    },
+    {
+        "page_content": "Gonzalo Higuaín is one of the all-time top goalscorers in UEFA Champions League history. Representing Argentina, he scored a total of 25 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Gonzalo Higuaín",
+            "goals_count": 25,
+            "nationality": "Argentina"
+        }
+    },
+    {
+        "page_content": "Paul Scholes is one of the all-time top goalscorers in UEFA Champions League history. Representing England, he scored a total of 25 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Paul Scholes",
+            "goals_count": 25,
+            "nationality": "England"
+        }
+    },
+    {
+        "page_content": "Olivier Giroud is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 24 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Olivier Giroud",
+            "goals_count": 24,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "José Altafini is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 24 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "José Altafini",
+            "goals_count": 24,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Claudio Pizarro is one of the all-time top goalscorers in UEFA Champions League history. Representing Peru, he scored a total of 24 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Claudio Pizarro",
+            "goals_count": 24,
+            "nationality": "Peru"
+        }
+    },
+    {
+        "page_content": "Luís Figo is one of the all-time top goalscorers in UEFA Champions League history. Representing Portugal, he scored a total of 24 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Luís Figo",
+            "goals_count": 24,
+            "nationality": "Portugal"
+        }
+    },
+    {
+        "page_content": "Cesc Fàbregas is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 24 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Cesc Fàbregas",
+            "goals_count": 24,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Álvaro Morata is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 23 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Álvaro Morata",
+            "goals_count": 23,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Maksim Shatskikh is one of the all-time top goalscorers in UEFA Champions League history. Representing Uzbekistan, he scored a total of 23 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Maksim Shatskikh",
+            "goals_count": 23,
+            "nationality": "Uzbekistan"
+        }
+    },
+    {
+        "page_content": "Lisandro is one of the all-time top goalscorers in UEFA Champions League history. Representing Argentina, he scored a total of 23 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Lisandro",
+            "goals_count": 23,
+            "nationality": "Argentina"
+        }
+    },
+    {
+        "page_content": "Roberto Firmino is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 23 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Roberto Firmino",
+            "goals_count": 23,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Jari Litmanen is one of the all-time top goalscorers in UEFA Champions League history. Representing Finland, he scored a total of 23 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Jari Litmanen",
+            "goals_count": 23,
+            "nationality": "Finland"
+        }
+    },
+    {
+        "page_content": "Frank Lampard is one of the all-time top goalscorers in UEFA Champions League history. Representing England, he scored a total of 23 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Frank Lampard",
+            "goals_count": 23,
+            "nationality": "England"
+        }
+    },
+    {
+        "page_content": "Marco Reus is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 22 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Marco Reus",
+            "goals_count": 22,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Luiz Adriano is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 22 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Luiz Adriano",
+            "goals_count": 22,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Ángel Di María is one of the all-time top goalscorers in UEFA Champions League history. Representing Argentina, he scored a total of 22 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Ángel Di María",
+            "goals_count": 22,
+            "nationality": "Argentina"
+        }
+    },
+    {
+        "page_content": "Adriano is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 22 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Adriano",
+            "goals_count": 22,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Hakan Şükür is one of the all-time top goalscorers in UEFA Champions League history. Representing Turkey, he scored a total of 22 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Hakan Şükür",
+            "goals_count": 22,
+            "nationality": "Turkey"
+        }
+    },
+    {
+        "page_content": "Carlos Santillana is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 22 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Carlos Santillana",
+            "goals_count": 22,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Amancio Amaro is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 21 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Amancio Amaro",
+            "goals_count": 21,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "José Torres is one of the all-time top goalscorers in UEFA Champions League history. Representing Portugal, he scored a total of 21 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "José Torres",
+            "goals_count": 21,
+            "nationality": "Portugal"
+        }
+    },
+    {
+        "page_content": "Harald Brattbakk is one of the all-time top goalscorers in UEFA Champions League history. Representing Norway, he scored a total of 21 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Harald Brattbakk",
+            "goals_count": 21,
+            "nationality": "Norway"
+        }
+    },
+    {
+        "page_content": "Heung-Min Son is one of the all-time top goalscorers in UEFA Champions League history. Representing Korea Republic, he scored a total of 21 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Heung-Min Son",
+            "goals_count": 21,
+            "nationality": "Korea Republic"
+        }
+    },
+    {
+        "page_content": "Klaas Jan Huntelaar is one of the all-time top goalscorers in UEFA Champions League history. Representing Netherlands, he scored a total of 21 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Klaas Jan Huntelaar",
+            "goals_count": 21,
+            "nationality": "Netherlands"
+        }
+    },
+    {
+        "page_content": "Romelu Lukaku is one of the all-time top goalscorers in UEFA Champions League history. Representing Belgium, he scored a total of 21 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Romelu Lukaku",
+            "goals_count": 21,
+            "nationality": "Belgium"
+        }
+    },
+    {
+        "page_content": "Harry Kane is one of the all-time top goalscorers in UEFA Champions League history. Representing England, he scored a total of 21 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Harry Kane",
+            "goals_count": 21,
+            "nationality": "England"
+        }
+    },
+    {
+        "page_content": "Nicolas Anelka is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Nicolas Anelka",
+            "goals_count": 20,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "Leroy Sané is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Leroy Sané",
+            "goals_count": 20,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Paul Van Himst is one of the all-time top goalscorers in UEFA Champions League history. Representing Belgium, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Paul Van Himst",
+            "goals_count": 20,
+            "nationality": "Belgium"
+        }
+    },
+    {
+        "page_content": "Hulk is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Hulk",
+            "goals_count": 20,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Gabriel Jesus is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Gabriel Jesus",
+            "goals_count": 20,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Riyad Mahrez is one of the all-time top goalscorers in UEFA Champions League history. Representing Algeria, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Riyad Mahrez",
+            "goals_count": 20,
+            "nationality": "Algeria"
+        }
+    },
+    {
+        "page_content": "Romário is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Romário",
+            "goals_count": 20,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Ole Gunnar Solskjær is one of the all-time top goalscorers in UEFA Champions League history. Representing Norway, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Ole Gunnar Solskjær",
+            "goals_count": 20,
+            "nationality": "Norway"
+        }
+    },
+    {
+        "page_content": "Fernando Torres is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Fernando Torres",
+            "goals_count": 20,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Luis Enrique is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Luis Enrique",
+            "goals_count": 20,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Gareth Bale is one of the all-time top goalscorers in UEFA Champions League history. Representing Wales, he scored a total of 20 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Gareth Bale",
+            "goals_count": 20,
+            "nationality": "Wales"
+        }
+    },
+    {
+        "page_content": "José Pirri is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "José Pirri",
+            "goals_count": 19,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "José Augusto is one of the all-time top goalscorers in UEFA Champions League history. Representing Portugal, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "José Augusto",
+            "goals_count": 19,
+            "nationality": "Portugal"
+        }
+    },
+    {
+        "page_content": "Gheorghe Hagi is one of the all-time top goalscorers in UEFA Champions League history. Representing Romania, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Gheorghe Hagi",
+            "goals_count": 19,
+            "nationality": "Romania"
+        }
+    },
+    {
+        "page_content": "Marco van Basten is one of the all-time top goalscorers in UEFA Champions League history. Representing Netherlands, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Marco van Basten",
+            "goals_count": 19,
+            "nationality": "Netherlands"
+        }
+    },
+    {
+        "page_content": "Johan Cruyff is one of the all-time top goalscorers in UEFA Champions League history. Representing Netherlands, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Johan Cruyff",
+            "goals_count": 19,
+            "nationality": "Netherlands"
+        }
+    },
+    {
+        "page_content": "Seydou Doumbia is one of the all-time top goalscorers in UEFA Champions League history. Representing Ivory Coast, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Seydou Doumbia",
+            "goals_count": 19,
+            "nationality": "Ivory Coast"
+        }
+    },
+    {
+        "page_content": "Willian is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Willian",
+            "goals_count": 19,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Jan Koller is one of the all-time top goalscorers in UEFA Champions League history. Representing Czech Republic, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Jan Koller",
+            "goals_count": 19,
+            "nationality": "Czech Republic"
+        }
+    },
+    {
+        "page_content": "Julio Cruz is one of the all-time top goalscorers in UEFA Champions League history. Representing Argentina, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Julio Cruz",
+            "goals_count": 19,
+            "nationality": "Argentina"
+        }
+    },
+    {
+        "page_content": "Eran Zahavi is one of the all-time top goalscorers in UEFA Champions League history. Representing Israel, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Eran Zahavi",
+            "goals_count": 19,
+            "nationality": "Israel"
+        }
+    },
+    {
+        "page_content": "Andy Cole is one of the all-time top goalscorers in UEFA Champions League history. Representing England, he scored a total of 19 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Andy Cole",
+            "goals_count": 19,
+            "nationality": "England"
+        }
+    },
+    {
+        "page_content": "Peter Crouch is one of the all-time top goalscorers in UEFA Champions League history. Representing England, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Peter Crouch",
+            "goals_count": 18,
+            "nationality": "England"
+        }
+    },
+    {
+        "page_content": "Theo Walcott is one of the all-time top goalscorers in UEFA Champions League history. Representing England, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Theo Walcott",
+            "goals_count": 18,
+            "nationality": "England"
+        }
+    },
+    {
+        "page_content": "Franck Ribéry is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Franck Ribéry",
+            "goals_count": 18,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "Lucho González is one of the all-time top goalscorers in UEFA Champions League history. Representing Argentina, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Lucho González",
+            "goals_count": 18,
+            "nationality": "Argentina"
+        }
+    },
+    {
+        "page_content": "Javier Saviola is one of the all-time top goalscorers in UEFA Champions League history. Representing Argentina, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Javier Saviola",
+            "goals_count": 18,
+            "nationality": "Argentina"
+        }
+    },
+    {
+        "page_content": "Paulo Dybala is one of the all-time top goalscorers in UEFA Champions League history. Representing Argentina, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Paulo Dybala",
+            "goals_count": 18,
+            "nationality": "Argentina"
+        }
+    },
+    {
+        "page_content": "Alex is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Alex",
+            "goals_count": 18,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Luc Nilis is one of the all-time top goalscorers in UEFA Champions League history. Representing Belgium, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Luc Nilis",
+            "goals_count": 18,
+            "nationality": "Belgium"
+        }
+    },
+    {
+        "page_content": "Hristo Stoichkov is one of the all-time top goalscorers in UEFA Champions League history. Representing Bulgaria, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Hristo Stoichkov",
+            "goals_count": 18,
+            "nationality": "Bulgaria"
+        }
+    },
+    {
+        "page_content": "Ronaldinho is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Ronaldinho",
+            "goals_count": 18,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Pernambucano Juninho is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Pernambucano Juninho",
+            "goals_count": 18,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "John Carew is one of the all-time top goalscorers in UEFA Champions League history. Representing Norway, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "John Carew",
+            "goals_count": 18,
+            "nationality": "Norway"
+        }
+    },
+    {
+        "page_content": "Águas is one of the all-time top goalscorers in UEFA Champions League history. Representing Portugal, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Águas",
+            "goals_count": 18,
+            "nationality": "Portugal"
+        }
+    },
+    {
+        "page_content": "Ally McCoist is one of the all-time top goalscorers in UEFA Champions League history. Representing Scotland, he scored a total of 18 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Ally McCoist",
+            "goals_count": 18,
+            "nationality": "Scotland"
+        }
+    },
+    {
+        "page_content": "Borivoje Kostić is one of the all-time top goalscorers in UEFA Champions League history. Representing Serbia, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Borivoje Kostić",
+            "goals_count": 17,
+            "nationality": "Serbia"
+        }
+    },
+    {
+        "page_content": "Emilio Butragueño is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Emilio Butragueño",
+            "goals_count": 17,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Jozef Adamec is one of the all-time top goalscorers in UEFA Champions League history. Representing Slovakia, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Jozef Adamec",
+            "goals_count": 17,
+            "nationality": "Slovakia"
+        }
+    },
+    {
+        "page_content": "Markus Rosenberg is one of the all-time top goalscorers in UEFA Champions League history. Representing Sweden, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Markus Rosenberg",
+            "goals_count": 17,
+            "nationality": "Sweden"
+        }
+    },
+    {
+        "page_content": "Deco is one of the all-time top goalscorers in UEFA Champions League history. Representing Portugal, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Deco",
+            "goals_count": 17,
+            "nationality": "Portugal"
+        }
+    },
+    {
+        "page_content": "Roar Strand is one of the all-time top goalscorers in UEFA Champions League history. Representing Norway, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Roar Strand",
+            "goals_count": 17,
+            "nationality": "Norway"
+        }
+    },
+    {
+        "page_content": "Marius Lăcătuş is one of the all-time top goalscorers in UEFA Champions League history. Representing Romania, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Marius Lăcătuş",
+            "goals_count": 17,
+            "nationality": "Romania"
+        }
+    },
+    {
+        "page_content": "Adrian Ilie is one of the all-time top goalscorers in UEFA Champions League history. Representing Romania, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Adrian Ilie",
+            "goals_count": 17,
+            "nationality": "Romania"
+        }
+    },
+    {
+        "page_content": "Francesco Totti is one of the all-time top goalscorers in UEFA Champions League history. Representing Italy, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Francesco Totti",
+            "goals_count": 17,
+            "nationality": "Italy"
+        }
+    },
+    {
+        "page_content": "Sandro Mazzola is one of the all-time top goalscorers in UEFA Champions League history. Representing Italy, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Sandro Mazzola",
+            "goals_count": 17,
+            "nationality": "Italy"
+        }
+    },
+    {
+        "page_content": "Hugo Sánchez is one of the all-time top goalscorers in UEFA Champions League history. Representing Mexico, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Hugo Sánchez",
+            "goals_count": 17,
+            "nationality": "Mexico"
+        }
+    },
+    {
+        "page_content": "Roberto Carlos is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Roberto Carlos",
+            "goals_count": 17,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Marcos Tavares is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Marcos Tavares",
+            "goals_count": 17,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Dries Mertens is one of the all-time top goalscorers in UEFA Champions League history. Representing Belgium, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Dries Mertens",
+            "goals_count": 17,
+            "nationality": "Belgium"
+        }
+    },
+    {
+        "page_content": "Michel Platini is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Michel Platini",
+            "goals_count": 17,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "Pierre-Emerick Aubameyang is one of the all-time top goalscorers in UEFA Champions League history. Representing Gabon, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Pierre-Emerick Aubameyang",
+            "goals_count": 17,
+            "nationality": "Gabon"
+        }
+    },
+    {
+        "page_content": "David Beckham is one of the all-time top goalscorers in UEFA Champions League history. Representing England, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "David Beckham",
+            "goals_count": 17,
+            "nationality": "England"
+        }
+    },
+    {
+        "page_content": "Michael Ballack is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Michael Ballack",
+            "goals_count": 17,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Timo Werner is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 17 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Timo Werner",
+            "goals_count": 17,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Karl-Heinz Rummenigge is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Karl-Heinz Rummenigge",
+            "goals_count": 16,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Dieter Hoeness is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Dieter Hoeness",
+            "goals_count": 16,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Kostas Mitroglou is one of the all-time top goalscorers in UEFA Champions League history. Representing Greece, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Kostas Mitroglou",
+            "goals_count": 16,
+            "nationality": "Greece"
+        }
+    },
+    {
+        "page_content": "Ronaldo is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Ronaldo",
+            "goals_count": 16,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Alexis Sánchez is one of the all-time top goalscorers in UEFA Champions League history. Representing Chile, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Alexis Sánchez",
+            "goals_count": 16,
+            "nationality": "Chile"
+        }
+    },
+    {
+        "page_content": "Pavel Nedvěd is one of the all-time top goalscorers in UEFA Champions League history. Representing Czech Republic, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Pavel Nedvěd",
+            "goals_count": 16,
+            "nationality": "Czech Republic"
+        }
+    },
+    {
+        "page_content": "Roberto Soldado is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Roberto Soldado",
+            "goals_count": 16,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Pedro Rodríguez is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Pedro Rodríguez",
+            "goals_count": 16,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "David Villa is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "David Villa",
+            "goals_count": 16,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Gerard Piqué is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Gerard Piqué",
+            "goals_count": 16,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Guti is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Guti",
+            "goals_count": 16,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Iván Helguera is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Iván Helguera",
+            "goals_count": 16,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Dušan Tadić is one of the all-time top goalscorers in UEFA Champions League history. Representing Serbia, he scored a total of 16 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Dušan Tadić",
+            "goals_count": 16,
+            "nationality": "Serbia"
+        }
+    },
+    {
+        "page_content": "Diego Tristán is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Diego Tristán",
+            "goals_count": 15,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Sergio Ramos is one of the all-time top goalscorers in UEFA Champions League history. Representing Spain, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Sergio Ramos",
+            "goals_count": 15,
+            "nationality": "Spain"
+        }
+    },
+    {
+        "page_content": "Dirk Kuyt is one of the all-time top goalscorers in UEFA Champions League history. Representing Netherlands, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Dirk Kuyt",
+            "goals_count": 15,
+            "nationality": "Netherlands"
+        }
+    },
+    {
+        "page_content": "Wesley Sneijder is one of the all-time top goalscorers in UEFA Champions League history. Representing Netherlands, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Wesley Sneijder",
+            "goals_count": 15,
+            "nationality": "Netherlands"
+        }
+    },
+    {
+        "page_content": "Simone Inzaghi is one of the all-time top goalscorers in UEFA Champions League history. Representing Italy, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Simone Inzaghi",
+            "goals_count": 15,
+            "nationality": "Italy"
+        }
+    },
+    {
+        "page_content": "Mihails Miholaps is one of the all-time top goalscorers in UEFA Champions League history. Representing Latvia, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Mihails Miholaps",
+            "goals_count": 15,
+            "nationality": "Latvia"
+        }
+    },
+    {
+        "page_content": "Nené is one of the all-time top goalscorers in UEFA Champions League history. Representing Portugal, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Nené",
+            "goals_count": 15,
+            "nationality": "Portugal"
+        }
+    },
+    {
+        "page_content": "Bernardo Silva is one of the all-time top goalscorers in UEFA Champions League history. Representing Portugal, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Bernardo Silva",
+            "goals_count": 15,
+            "nationality": "Portugal"
+        }
+    },
+    {
+        "page_content": "Wlodzimierz Lubanski is one of the all-time top goalscorers in UEFA Champions League history. Representing Poland, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Wlodzimierz Lubanski",
+            "goals_count": 15,
+            "nationality": "Poland"
+        }
+    },
+    {
+        "page_content": "Mislav Oršić is one of the all-time top goalscorers in UEFA Champions League history. Representing Croatia, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Mislav Oršić",
+            "goals_count": 15,
+            "nationality": "Croatia"
+        }
+    },
+    {
+        "page_content": "Arturo Vidal is one of the all-time top goalscorers in UEFA Champions League history. Representing Chile, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Arturo Vidal",
+            "goals_count": 15,
+            "nationality": "Chile"
+        }
+    },
+    {
+        "page_content": "Sonny Anderson is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Sonny Anderson",
+            "goals_count": 15,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Rodrygo is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Rodrygo",
+            "goals_count": 15,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Vinícius Júnior is one of the all-time top goalscorers in UEFA Champions League history. Representing Brazil, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Vinícius Júnior",
+            "goals_count": 15,
+            "nationality": "Brazil"
+        }
+    },
+    {
+        "page_content": "Dimitar Berbatov is one of the all-time top goalscorers in UEFA Champions League history. Representing Bulgaria, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Dimitar Berbatov",
+            "goals_count": 15,
+            "nationality": "Bulgaria"
+        }
+    },
+    {
+        "page_content": "Vitali Rodionov is one of the all-time top goalscorers in UEFA Champions League history. Representing Belarus, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Vitali Rodionov",
+            "goals_count": 15,
+            "nationality": "Belarus"
+        }
+    },
+    {
+        "page_content": "Ferenc Bene is one of the all-time top goalscorers in UEFA Champions League history. Representing Hungary, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Ferenc Bene",
+            "goals_count": 15,
+            "nationality": "Hungary"
+        }
+    },
+    {
+        "page_content": "Mario Götze is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Mario Götze",
+            "goals_count": 15,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Miroslav Klose is one of the all-time top goalscorers in UEFA Champions League history. Representing Germany, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Miroslav Klose",
+            "goals_count": 15,
+            "nationality": "Germany"
+        }
+    },
+    {
+        "page_content": "Wissam Ben Yedder is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Wissam Ben Yedder",
+            "goals_count": 15,
+            "nationality": "France"
+        }
+    },
+    {
+        "page_content": "Sylvain Wiltord is one of the all-time top goalscorers in UEFA Champions League history. Representing France, he scored a total of 15 goals during his Champions League career.",
+        "metadata": {
+            "source_file": "ucl_top_goalscorers_perfect.csv",
+            "category": "all_time_goalscorers",
+            "player": "Sylvain Wiltord",
+            "goals_count": 15,
+            "nationality": "France"
+        }
+    }
+]
