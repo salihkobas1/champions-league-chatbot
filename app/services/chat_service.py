@@ -1,4 +1,10 @@
 from app.services.router_service import route_question
+from app.core.config import USE_LLM
+from app.services.llm_service import (
+    generate_sql_answer,
+    generate_rag_answer,
+    generate_hybrid_answer,
+)
 from app.services.rag_service import RagService
 from app.services.sql_service import (
     get_top_goalscorers,
@@ -343,12 +349,18 @@ def answer_question(question: str):
     if route == "sql":
         sql_payload = detect_simple_sql_intent(question)
 
-        final_answer = format_sql_answer(
-            question,
-            sql_payload["intent"],
-            sql_payload["result"],
-        )
-
+        if USE_LLM:
+            final_answer = generate_sql_answer(
+                question,
+                sql_payload["intent"],
+                sql_payload["result"],
+            )
+        else:
+            final_answer = format_sql_answer(
+                question,
+                sql_payload["intent"],
+                sql_payload["result"],
+            )
         return {
             "route": "sql",
             "answer": final_answer,
@@ -362,7 +374,13 @@ def answer_question(question: str):
         rag = get_rag_service()
         retrieved_docs = rag.retrieve(question, top_k=5)
 
-        final_answer = format_rag_answer(retrieved_docs)
+        if USE_LLM:
+            final_answer = generate_rag_answer(
+                question,
+                retrieved_docs,
+            )
+        else:
+            final_answer = format_rag_answer(retrieved_docs)
 
         return {
             "route": "rag",
@@ -379,11 +397,19 @@ def answer_question(question: str):
         rag = get_rag_service()
         retrieved_docs = rag.retrieve(question, top_k=5)
 
-        final_answer = format_hybrid_answer(
-            sql_payload["intent"],
-            sql_payload["result"],
-            retrieved_docs,
-        )
+        if USE_LLM:
+            final_answer = generate_hybrid_answer(
+                question,
+                sql_payload["intent"],
+                sql_payload["result"],
+                retrieved_docs,
+            )
+        else:
+            final_answer = format_hybrid_answer(
+                sql_payload["intent"],
+                sql_payload["result"],
+                retrieved_docs,
+            )
 
         return {
             "route": "hybrid",
