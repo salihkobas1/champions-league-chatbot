@@ -133,15 +133,23 @@ def format_rag_answer(retrieved_docs):
 def format_hybrid_answer(sql_intent: str, sql_result, retrieved_docs):
     sql_answer = format_sql_answer("", sql_intent, sql_result)
 
-    if not retrieved_docs:
+    if not retrieved_docs or not sql_result:
         return sql_answer
+
+    sql_players = set()
+
+    for row in sql_result:
+        if "Player" in row:
+            sql_players.add(row["Player"].lower())
 
     context_lines = []
 
-    for doc in retrieved_docs[:3]:
-        page_content = doc.get("page_content", "")
-        if page_content:
-            context_lines.append(page_content)
+    for doc in retrieved_docs[:10]:
+        metadata = doc.get("metadata", {})
+        player = metadata.get("player", "")
+
+        if player and player.lower() in sql_players:
+            context_lines.append(doc.get("page_content", ""))
 
     if not context_lines:
         return sql_answer
