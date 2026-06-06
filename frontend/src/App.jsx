@@ -1,17 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { sendChatMessage } from "./api/chatApi";
 import "./App.css";
 
+const INITIAL_MESSAGES = [
+  {
+    role: "bot",
+    text: "Hi! Ask me a Champions League history question.",
+    route: null,
+  },
+];
+
 function App() {
-  const [messages, setMessages] = useState([
-    {
-      role: "bot",
-      text: "Hi! Ask me a Champions League history question.",
-      route: null,
-    },
-  ]);
+  const [messages, setMessages] = useState(() => {
+    const saved = localStorage.getItem("ucl_chat_history");
+    return saved ? JSON.parse(saved) : INITIAL_MESSAGES;
+  });
+
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("ucl_chat_history", JSON.stringify(messages));
+  }, [messages]);
 
   async function handleSend(e) {
     e.preventDefault();
@@ -53,12 +63,20 @@ function App() {
     }
   }
 
+  function clearChat() {
+    localStorage.removeItem("ucl_chat_history");
+    setMessages(INITIAL_MESSAGES);
+  }
+
   return (
     <div className="app">
       <div className="chat-container">
         <header className="chat-header">
           <h1>Champions League Chatbot</h1>
           <p>Ask historical UEFA Champions League questions</p>
+          <button className="clear-button" onClick={clearChat}>
+            Clear Chat
+          </button>
         </header>
 
         <main className="chat-window">
