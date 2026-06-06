@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { sendChatMessage } from "./api/chatApi";
 import "./App.css";
 
@@ -19,9 +19,15 @@ function App() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const messagesEndRef = useRef(null);
+
   useEffect(() => {
     localStorage.setItem("ucl_chat_history", JSON.stringify(messages));
   }, [messages]);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, loading]);
 
   async function handleSend(e) {
     e.preventDefault();
@@ -101,6 +107,8 @@ function App() {
               </div>
             </div>
           )}
+
+          <div ref={messagesEndRef} />
         </main>
 
         <form className="chat-input-area" onSubmit={handleSend}>
