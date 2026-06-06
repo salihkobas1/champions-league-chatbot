@@ -1,122 +1,104 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from "react";
+import { sendChatMessage } from "./api/chatApi";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [messages, setMessages] = useState([
+    {
+      role: "bot",
+      text: "Hi! Ask me a Champions League history question.",
+      route: null,
+    },
+  ]);
+  const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  async function handleSend(e) {
+    e.preventDefault();
+
+    if (!input.trim()) return;
+
+    const userMessage = input.trim();
+
+    setMessages((prev) => [
+      ...prev,
+      { role: "user", text: userMessage, route: null },
+    ]);
+
+    setInput("");
+    setLoading(true);
+
+    try {
+      const data = await sendChatMessage(userMessage);
+
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "bot",
+          text: data.answer,
+          route: data.route,
+        },
+      ]);
+    } catch (error) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "bot",
+          text: "Sorry, something went wrong while contacting the backend.",
+          route: "error",
+        },
+      ]);
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="app">
+      <div className="chat-container">
+        <header className="chat-header">
+          <h1>Champions League Chatbot</h1>
+          <p>Ask historical UEFA Champions League questions</p>
+        </header>
 
-      <div className="ticks"></div>
+        <main className="chat-window">
+          {messages.map((message, index) => (
+            <div key={index} className={`message-row ${message.role}`}>
+              <div className={`message-bubble ${message.role}`}>
+                <p>{message.text}</p>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+                {message.route && (
+                  <span className={`route-badge ${message.route}`}>
+                    {message.route.toUpperCase()}
+                  </span>
+                )}
+              </div>
+            </div>
+          ))}
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+          {loading && (
+            <div className="message-row bot">
+              <div className="message-bubble bot">
+                <p>Thinking...</p>
+              </div>
+            </div>
+          )}
+        </main>
+
+        <form className="chat-input-area" onSubmit={handleSend}>
+          <input
+            type="text"
+            placeholder="Ask something like: Who is the 5th highest goalscorer?"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+          <button type="submit" disabled={loading}>
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
