@@ -127,6 +127,11 @@ def format_rag_answer(retrieved_docs):
         return "I could not find relevant information in the available UEFA dataset."
 
     best_doc = retrieved_docs[0]
+    best_score = best_doc.get("score", 0)
+
+    if best_score < 0.45:
+        return "I could not find relevant information in the available UEFA dataset."
+
     return best_doc["page_content"]
 
 
@@ -145,11 +150,16 @@ def format_hybrid_answer(sql_intent: str, sql_result, retrieved_docs):
     context_lines = []
 
     for doc in retrieved_docs[:10]:
+        if doc.get("score", 0) < 0.45:
+            continue
+
         metadata = doc.get("metadata", {})
         player = metadata.get("player", "")
 
         if player and player.lower() in sql_players:
-            context_lines.append(doc.get("page_content", ""))
+            page_content = doc.get("page_content", "")
+            if page_content:
+                context_lines.append(page_content)
 
     if not context_lines:
         return sql_answer

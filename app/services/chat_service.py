@@ -344,6 +344,16 @@ def detect_season(text: str):
 
 
 def answer_question(question: str):
+    if is_invalid_question(question):
+        return {
+            "route": "unknown",
+            "answer": "I could not understand the question. Please ask a clear UEFA Champions League question.",
+            "sql_intent": None,
+            "sql_result": None,
+            "retrieved_docs": None,
+            "sources": None,
+        }
+    
     route = route_question(question)
 
     if route == "sql":
@@ -428,3 +438,35 @@ def answer_question(question: str):
         "retrieved_docs": None,
         "sources": None,
     }
+
+
+def is_invalid_question(question: str) -> bool:
+    q = question.strip().lower()
+
+    if len(q) < 4:
+        return True
+
+    words = q.split()
+
+    # very short random input like "klklhl"
+    if len(words) == 1 and len(q) < 8:
+        common_valid_words = [
+            "messi",
+            "ronaldo",
+            "neymar",
+            "mbappe",
+            "bayern",
+            "barcelona",
+            "madrid",
+            "hulk",
+        ]
+
+        if q not in common_valid_words:
+            return True
+
+    # no vowels usually means random keyboard spam
+    vowels = "aeiou"
+    if not any(vowel in q for vowel in vowels):
+        return True
+
+    return False
