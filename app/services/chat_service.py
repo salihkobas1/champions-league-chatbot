@@ -1,3 +1,6 @@
+import unicodedata
+import string
+
 from app.services.router_service import route_question
 from app.core.config import USE_LLM
 from app.services.llm_service import (
@@ -23,6 +26,12 @@ from app.services.sql_service import (
     get_club_by_most_titles,
     get_player_with_most_goals,
     get_player_with_most_appearances,
+    get_multiple_player_goals,
+    get_multiple_club_titles,
+    get_player_with_highest_goal_ratio,
+    get_player_goal_ratio,
+    get_top_players_by_goal_ratio,
+    get_multiple_player_appearances
 )
 from app.services.answer_formatter_service import (
     format_sql_answer,
@@ -60,11 +69,110 @@ def detect_simple_sql_intent(question: str):
 
     q = question.lower()
 
+    # Compare goals between two or more players
+    player_names = detect_player_names(q)
+
+    if len(player_names) >= 2 and "goal" in q and (
+        "more" in q
+        or "higher" in q
+        or "compare" in q
+        or "which one" in q
+        or "who has" in q
+    ):
+        return {
+            "intent": "compare_player_goals",
+            "result": get_multiple_player_goals(player_names),
+        }
+
     if "who" in q and "most" in q and "goal" in q and ("player" in q or "scored" in q or "has" in q):
         return {
             "intent": "player_with_most_goals",
             "result": get_player_with_most_goals(),
         }
+
+    # Compare appearances between two or more players
+    if len(player_names) >= 2 and (
+        "appearance" in q
+        or "appearances" in q
+        or "match" in q
+        or "matches" in q
+        or "played more" in q
+    ) and (
+        "more" in q
+        or "higher" in q
+        or "compare" in q
+        or "which one" in q
+        or "who has" in q
+        or "or" in q
+    ):
+        return {
+            "intent": "compare_player_appearances",
+            "result": get_multiple_player_appearances(player_names),
+        }
+
+    # Compare titles between two or more clubs
+    club_names = detect_club_names(q)
+
+    if len(club_names) >= 2 and "title" in q and (
+        "more" in q
+        or "higher" in q
+        or "compare" in q
+        or "which one" in q
+        or "which club" in q
+        or "or" in q
+    ):
+        return {
+            "intent": "compare_club_titles",
+            "result": get_multiple_club_titles(club_names),
+        }
+    
+    # Top list by goal ratio
+    if "top" in q and (
+        "goal ratio" in q
+        or "goals per match" in q
+        or "goals per appearance" in q
+        or "goal per match" in q
+        or "goal per appearance" in q
+    ):
+        limit = extract_number(q, default=10)
+
+        return {
+            "intent": "top_players_by_goal_ratio",
+            "result": get_top_players_by_goal_ratio(limit=limit),
+        }
+    
+    # Specific player goal ratio
+    player_name = detect_player_name(q)
+
+    if player_name and (
+        "goal ratio" in q
+        or "goals per match" in q
+        or "goals per appearance" in q
+        or "goal per match" in q
+        or "goal per appearance" in q
+    ):
+        return {
+            "intent": "player_goal_ratio",
+            "result": get_player_goal_ratio(player_name),
+        }
+
+    # Highest goal ratio among players
+    if (
+        "highest" in q
+        or "best" in q
+        or "most" in q
+    ) and (
+        "goal ratio" in q
+        or "goals per match" in q
+        or "goals per appearance" in q
+        or "goal per match" in q
+        or "goal per appearance" in q
+    ):
+        return {
+            "intent": "player_with_highest_goal_ratio",
+            "result": get_player_with_highest_goal_ratio(),
+        }
+
 
     # Player with most appearances
     if "who" in q and "most" in q and ("appearance" in q or "appearances" in q or "matches" in q):
@@ -104,11 +212,6 @@ def detect_simple_sql_intent(question: str):
             "intent": "club_titles",
             "result": get_club_titles(club_name),
         }
-
-
-
-
-
 
 
     # Top goalscorers
@@ -256,42 +359,77 @@ def detect_nationality(text: str):
     return None
 
 
-def detect_player_name(text: str):
-    """
-    Temporary player detector for popular players in the dataset.
-    This can later be replaced with a dynamic database lookup.
-    """
+def normalize_text(text: str):
+    text = text.lower()
+    text = text.translate(str.maketrans("", "", string.punctuation))
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    return text
 
-    player_map = {
+
+def get_player_map():
+    return {
         "ronaldo": "Cristiano Ronaldo",
         "cristiano": "Cristiano Ronaldo",
         "cristiano ronaldo": "Cristiano Ronaldo",
+
         "messi": "Lionel Messi",
         "lionel messi": "Lionel Messi",
+
         "lewandowski": "Robert Lewandowski",
         "robert lewandowski": "Robert Lewandowski",
+
         "benzema": "Karim Benzema",
         "karim benzema": "Karim Benzema",
+
+        "suarez": "Luis Suárez",
+        "luis suarez": "Luis Suárez",
+
         "raul": "Raúl González",
-        "raúl": "Raúl González",
         "raul gonzalez": "Raúl González",
-        "raúl gonzález": "Raúl González",
+
         "neymar": "Neymar",
+
         "mbappe": "Kylian Mbappé",
-        "mbappé": "Kylian Mbappé",
+        "kylian mbappe": "Kylian Mbappé",
+
         "van nistelrooy": "Ruud van Nistelrooy",
+        "ruud van nistelrooy": "Ruud van Nistelrooy",
+
         "shevchenko": "Andriy Shevchenko",
+        "andriy shevchenko": "Andriy Shevchenko",
+
         "henry": "Thierry Henry",
+        "thierry henry": "Thierry Henry",
+
         "zlatan": "Zlatan Ibrahimović",
         "ibrahimovic": "Zlatan Ibrahimović",
+        "zlatan ibrahimovic": "Zlatan Ibrahimović",
     }
 
+
+def detect_player_names(text: str):
+    normalized_text = normalize_text(text)
+    player_map = get_player_map()
+
+    detected = []
+
     for key, value in player_map.items():
-        if key in text:
-            return value
+        normalized_key = normalize_text(key)
+
+        if normalized_key in normalized_text and value not in detected:
+            detected.append(value)
+
+    return detected
+
+
+def detect_player_name(text: str):
+    detected_players = detect_player_names(text)
+
+    if detected_players:
+        return detected_players[0]
 
     return None
-
 
 def detect_club_name(text: str):
     """
@@ -323,6 +461,52 @@ def detect_club_name(text: str):
             return value
 
     return None
+
+def detect_club_names(text: str):
+    normalized_text = normalize_text(text)
+
+    club_map = {
+        "real madrid": "Real Madrid CF",
+        "madrid": "Real Madrid CF",
+
+        "bayern": "FC Bayern München",
+        "bayern munich": "FC Bayern München",
+        "bayern munchen": "FC Bayern München",
+
+        "barcelona": "FC Barcelona",
+        "barca": "FC Barcelona",
+
+        "manchester united": "Manchester United FC",
+        "man united": "Manchester United FC",
+
+        "milan": "AC Milan",
+        "ac milan": "AC Milan",
+
+        "liverpool": "Liverpool FC",
+
+        "juventus": "Juventus",
+
+        "chelsea": "Chelsea FC",
+
+        "psg": "Paris Saint-Germain",
+        "paris saint germain": "Paris Saint-Germain",
+        "paris saint-germain": "Paris Saint-Germain",
+
+        "inter": "FC Internazionale Milano",
+        "internazionale": "FC Internazionale Milano",
+
+        "ajax": "AFC Ajax",
+    }
+
+    detected = []
+
+    for key, value in club_map.items():
+        normalized_key = normalize_text(key)
+
+        if normalized_key in normalized_text and value not in detected:
+            detected.append(value)
+
+    return detected
 
 
 

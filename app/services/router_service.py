@@ -45,6 +45,31 @@ def route_question(question: str) -> str:
         "less than",
         "greater than",
         "list",
+
+        # comparison/statistical signals
+        "which one",
+        "which player",
+        "which club",
+        "which team",
+        "compare",
+        "versus",
+        "vs",
+        "more goals",
+        "more titles",
+        "more appearances",
+        "more matches",
+        "title",
+        "titles",
+        "goals",
+        "appearances",
+        "matches",
+
+        "ratio",
+        "goal ratio",
+        "goals per match",
+        "goals per appearance",
+        "goal per match",
+        "goal per appearance",
     ]
 
     rag_phrases = [

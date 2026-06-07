@@ -170,3 +170,104 @@ def get_player_with_most_appearances():
     LIMIT 1;
     """
     return run_sql_query(query)
+
+def get_multiple_player_goals(player_names: list[str]):
+    results = []
+
+    for player_name in player_names:
+        query = """
+        SELECT Player, Goals, Nationality
+        FROM top_goalscorers
+        WHERE LOWER(Player) LIKE LOWER(?)
+        LIMIT 1;
+        """
+
+        rows = run_sql_query(query, (f"%{player_name}%",))
+
+        if rows:
+            results.append(rows[0])
+
+    return results
+
+
+def get_multiple_club_titles(club_names: list[str]):
+    results = []
+
+    for club_name in club_names:
+        query = """
+        SELECT Club, Country, Titles, Pld, W, D, L, Pts, GD
+        FROM club_ranking
+        WHERE LOWER(Club) LIKE LOWER(?)
+        LIMIT 1;
+        """
+
+        rows = run_sql_query(query, (f"%{club_name}%",))
+
+        if rows:
+            results.append(rows[0])
+
+    return results
+
+def get_player_with_highest_goal_ratio(min_matches: int = 10):
+    query = """
+    SELECT 
+        Player,
+        Matches,
+        Goals,
+        Nationality,
+        ROUND(CAST(Goals AS FLOAT) / Matches, 3) AS Goal_Ratio
+    FROM player_appearances
+    WHERE Matches >= ?
+    ORDER BY Goal_Ratio DESC
+    LIMIT 1;
+    """
+    return run_sql_query(query, (min_matches,))
+
+
+def get_player_goal_ratio(player_name: str):
+    query = """
+    SELECT 
+        Player,
+        Matches,
+        Goals,
+        Nationality,
+        ROUND(CAST(Goals AS FLOAT) / Matches, 3) AS Goal_Ratio
+    FROM player_appearances
+    WHERE LOWER(Player) LIKE LOWER(?)
+    LIMIT 1;
+    """
+    return run_sql_query(query, (f"%{player_name}%",))
+
+
+def get_top_players_by_goal_ratio(limit: int = 10, min_matches: int = 10):
+    query = """
+    SELECT 
+        Player,
+        Matches,
+        Goals,
+        Nationality,
+        ROUND(CAST(Goals AS FLOAT) / Matches, 3) AS Goal_Ratio
+    FROM player_appearances
+    WHERE Matches >= ?
+    ORDER BY Goal_Ratio DESC
+    LIMIT ?;
+    """
+    return run_sql_query(query, (min_matches, limit))
+
+def get_multiple_player_appearances(player_names: list[str]):
+    results = []
+
+    for player_name in player_names:
+        query = """
+        SELECT Player, Matches, Goals, Nationality
+        FROM player_appearances
+        WHERE LOWER(Player) LIKE LOWER(?)
+        LIMIT 1;
+        """
+
+        rows = run_sql_query(query, (f"%{player_name}%",))
+
+        if rows:
+            results.append(rows[0])
+
+    return results

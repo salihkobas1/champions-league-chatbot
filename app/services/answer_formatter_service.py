@@ -119,6 +119,108 @@ def format_sql_answer(question: str, sql_intent: str, sql_result):
             )
         return "\n".join(lines)
 
+    if sql_intent == "compare_player_goals":
+        if len(sql_result) < 2:
+            return "I could not find enough player data to compare their Champions League goals."
+
+        sorted_players = sorted(
+            sql_result,
+            key=lambda row: row["Goals"],
+            reverse=True,
+        )
+
+        winner = sorted_players[0]
+
+        lines = ["Here is the Champions League goals comparison:"]
+
+        for row in sorted_players:
+            lines.append(
+                f"- {row['Player']}: {row['Goals']} goals ({row['Nationality']})"
+            )
+
+        lines.append(
+            f"\n{winner['Player']} has more Champions League goals."
+        )
+
+        return "\n".join(lines)
+    
+    if sql_intent == "compare_club_titles":
+        if len(sql_result) < 2:
+            return "I could not find enough club data to compare their Champions League titles."
+
+        sorted_clubs = sorted(
+            sql_result,
+            key=lambda row: row["Titles"],
+            reverse=True,
+        )
+
+        winner = sorted_clubs[0]
+
+        lines = ["Here is the Champions League titles comparison:"]
+
+        for row in sorted_clubs:
+            lines.append(
+                f"- {row['Club']}: {row['Titles']} titles ({row['Country']})"
+            )
+
+        lines.append(
+            f"\n{winner['Club']} has more Champions League titles."
+        )
+
+        return "\n".join(lines)
+    
+    if sql_intent == "player_goal_ratio":
+        row = sql_result[0]
+        return (
+            f"{row['Player']} scored {row['Goals']} goals in {row['Matches']} appearances, "
+            f"which gives a goals-per-appearance ratio of {row['Goal_Ratio']}."
+        )
+
+    if sql_intent == "player_with_highest_goal_ratio":
+        row = sql_result[0]
+        return (
+            f"The player with the highest goals-per-appearance ratio is {row['Player']}. "
+            f"He scored {row['Goals']} goals in {row['Matches']} appearances, "
+            f"with a ratio of {row['Goal_Ratio']} goals per appearance."
+        )
+
+    if sql_intent == "top_players_by_goal_ratio":
+        lines = ["The top players by goals-per-appearance ratio are:"]
+
+        for i, row in enumerate(sql_result, start=1):
+            lines.append(
+                f"{i}. {row['Player']} - {row['Goal_Ratio']} "
+                f"({row['Goals']} goals in {row['Matches']} appearances)"
+            )
+
+        return "\n".join(lines)
+    
+    if sql_intent == "compare_player_appearances":
+        if len(sql_result) < 2:
+            return "I could not find enough player data to compare their Champions League appearances."
+
+        sorted_players = sorted(
+            sql_result,
+            key=lambda row: row["Matches"],
+            reverse=True,
+        )
+
+        winner = sorted_players[0]
+
+        lines = ["Here is the Champions League appearances comparison:"]
+
+        for row in sorted_players:
+            lines.append(
+                f"- {row['Player']}: {row['Matches']} appearances "
+                f"({row['Goals']} goals, {row['Nationality']})"
+            )
+
+        lines.append(
+            f"\n{winner['Player']} has more Champions League appearances."
+        )
+
+        return "\n".join(lines)
+    
     return "SQL result was found, but no formatter is available for this intent."
 
 
