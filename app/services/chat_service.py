@@ -528,20 +528,64 @@ def detect_season(text: str):
 
 
 def answer_question(question: str):
-    if is_invalid_question(question):
+    route = route_question(question)
+
+    RAG_SCORE_THRESHOLD = 0.35
+
+    def is_rag_result_reliable(retrieved_docs):
+        """
+        Checks whether RAG returned at least one sufficiently relevant document.
+        FAISS usually returns something, even if it is weakly related.
+        Therefore, we use a score threshold.
+        """
+        if not retrieved_docs:
+            return False
+
+        best_score = retrieved_docs[0].get("score", 0)
+        return best_score >= RAG_SCORE_THRESHOLD
+
+    def not_found_response(route_name, sql_intent=None, sql_result=None, retrieved_docs=None):
         return {
-            "route": "unknown",
-            "answer": "I could not understand the question. Please ask a clear UEFA Champions League question.",
-            "sql_intent": None,
-            "sql_result": None,
-            "retrieved_docs": None,
+            "route": route_name,
+            "answer": "I could not find the requested information in the available UEFA Champions League sources.",
+            "sql_intent": sql_intent,
+            "sql_result": sql_result,
+            "retrieved_docs": retrieved_docs,
             "sources": None,
         }
-    
-    route = route_question(question)
 
     if route == "sql":
         sql_payload = detect_simple_sql_intent(question)
+
+        # SQL failed or intent could not be detected -> fallback to RAG
+        if sql_payload["intent"] == "unknown_sql_intent" or not sql_payload["result"]:
+            rag = get_rag_service()
+            retrieved_docs = rag.retrieve(question, top_k=5)
+
+            if not is_rag_result_reliable(retrieved_docs):
+                return not_found_response(
+                    "rag_fallback",
+                    sql_intent=sql_payload["intent"],
+                    sql_result=sql_payload["result"],
+                    retrieved_docs=retrieved_docs,
+                )
+
+            if USE_LLM:
+                final_answer = generate_rag_answer(
+                    question,
+                    retrieved_docs,
+                )
+            else:
+                final_answer = format_rag_answer(retrieved_docs)
+
+            return {
+                "route": "rag_fallback",
+                "answer": final_answer,
+                "sql_intent": sql_payload["intent"],
+                "sql_result": sql_payload["result"],
+                "retrieved_docs": retrieved_docs,
+                "sources": None,
+            }
 
         if USE_LLM:
             final_answer = generate_sql_answer(
@@ -555,6 +599,7 @@ def answer_question(question: str):
                 sql_payload["intent"],
                 sql_payload["result"],
             )
+
         return {
             "route": "sql",
             "answer": final_answer,
@@ -567,6 +612,14 @@ def answer_question(question: str):
     if route == "rag":
         rag = get_rag_service()
         retrieved_docs = rag.retrieve(question, top_k=5)
+
+        if not is_rag_result_reliable(retrieved_docs):
+            return not_found_response(
+                "rag",
+                sql_intent=None,
+                sql_result=None,
+                retrieved_docs=retrieved_docs,
+            )
 
         if USE_LLM:
             final_answer = generate_rag_answer(
@@ -591,6 +644,33 @@ def answer_question(question: str):
         rag = get_rag_service()
         retrieved_docs = rag.retrieve(question, top_k=5)
 
+        # Hybrid selected but SQL failed -> fallback to RAG only
+        if sql_payload["intent"] == "unknown_sql_intent" or not sql_payload["result"]:
+            if not is_rag_result_reliable(retrieved_docs):
+                return not_found_response(
+                    "rag_fallback",
+                    sql_intent=sql_payload["intent"],
+                    sql_result=sql_payload["result"],
+                    retrieved_docs=retrieved_docs,
+                )
+
+            if USE_LLM:
+                final_answer = generate_rag_answer(
+                    question,
+                    retrieved_docs,
+                )
+            else:
+                final_answer = format_rag_answer(retrieved_docs)
+
+            return {
+                "route": "rag_fallback",
+                "answer": final_answer,
+                "sql_intent": sql_payload["intent"],
+                "sql_result": sql_payload["result"],
+                "retrieved_docs": retrieved_docs,
+                "sources": None,
+            }
+
         if USE_LLM:
             final_answer = generate_hybrid_answer(
                 question,
@@ -614,12 +694,32 @@ def answer_question(question: str):
             "sources": None,
         }
 
+    # Unknown route -> try RAG as last fallback
+    rag = get_rag_service()
+    retrieved_docs = rag.retrieve(question, top_k=5)
+
+    if not is_rag_result_reliable(retrieved_docs):
+        return not_found_response(
+            "rag_fallback",
+            sql_intent=None,
+            sql_result=None,
+            retrieved_docs=retrieved_docs,
+        )
+
+    if USE_LLM:
+        final_answer = generate_rag_answer(
+            question,
+            retrieved_docs,
+        )
+    else:
+        final_answer = format_rag_answer(retrieved_docs)
+
     return {
-        "route": "unknown",
-        "answer": "Could not route the question.",
+        "route": "rag_fallback",
+        "answer": final_answer,
         "sql_intent": None,
         "sql_result": None,
-        "retrieved_docs": None,
+        "retrieved_docs": retrieved_docs,
         "sources": None,
     }
 
