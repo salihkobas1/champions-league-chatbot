@@ -20,3 +20,7 @@ DOCUMENTS_PATH = RAG_INDEX_DIR / "documents.pkl"
 METADATA_PATH = RAG_INDEX_DIR / "metadata.pkl"
 USE_LLM = os.getenv("USE_LLM", "false").lower() == "true"
 LLM_MODEL_NAME = os.getenv("LLM_MODEL_NAME", "Qwen/Qwen2.5-3B-Instruct")
+
+JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "change-this-secret-key-later")
+JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "60"))
