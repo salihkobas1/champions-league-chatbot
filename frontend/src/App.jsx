@@ -179,9 +179,14 @@ function App() {
     return (
       <div className="app">
         <div className="auth-container">
+          <img
+            src="/ucl-logo.png"
+            alt="UEFA Champions League Logo"
+            className="auth-logo"
+          />
+
           <h1>Champions League Chatbot</h1>
           <p>Login or register to start chatting.</p>
-
           <div className="auth-tabs">
             <button
               className={authMode === "login" ? "active" : ""}
@@ -240,6 +245,12 @@ function App() {
     <div className="app">
       <div className="chat-container">
         <header className="chat-header">
+          <img
+            src="/ucl-logox.png"
+            alt="UEFA Champions League Logo"
+            className="chat-logo"
+          />
+
           <h1>Champions League Chatbot</h1>
           <p>Logged in as {user.username} ({user.email})</p>
 
